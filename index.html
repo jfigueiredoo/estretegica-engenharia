@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Manual de Processos Internos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <div class="lateral">
+            <div class="botoes">
+                <div class="botao1">
+                    <button>Manual de Processos</button>
+                </div>
+                <div class="botao2">
+                    <button onclick="window.location.href='empresa.html'">Manual da Empresa</button>
+                </div>
+                <div class="botao3">
+                    <button onclick="window.location.href='cliente.html'">Manual de Clientes</button>
+                </div>
+                <div class="botao4">
+                    <button onclick="window.location.href='descricao.html'">Descrição de Cargos</button>
+                </div>
+            </div>           
+        </div>
+        <div class="container">
+            <img src="img/logo2 - cópia.png" alt="Logo do Meu Site" class="logo">        
+            <h1>Manual de Processos</h1>
+            <div>
+                <label for="areas">Área:</label>
+                <select id="areas" onchange="loadCargos()">
+                    <option value="">Selecione uma área:</option>
+                </select>
+            </div>
+            <div>
+                <label for="cargos">Cargo:</label>
+                <select id="cargos" onchange="loadProcessos()">
+                    <option value="">Selecione um cargo:</option>
+                </select>
+            </div>
+            <div>
+                <label for="processos">Processo:</label>
+                <select id="processos" onchange="loadDetalhes()">
+                    <option value="">Selecione um processo:</option>
+                </select>
+            </div>
+            <div id="detalhes" style="display: none;">
+                <h2>Detalhes do Processo:</h2>
+                <ul id="detalhes-list"></ul>
+            </div>
+            <div id="fluxograma" style="display: none;">
+                <img id="fluxograma-imagem" src="" alt="Fluxograma do Processo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal e Overlay -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()"></div>
+    <div id="modal" class="modal">
+        <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+        <h2>Detalhes do Processo</h2>
+        <p id="modal-description"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

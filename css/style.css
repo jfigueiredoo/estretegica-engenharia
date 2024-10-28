@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1c1c1;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.lateral {
+    background-color: #112e64;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a4492;
+    font-size: 34px;
+}
+
+h2, label {
+    color: #1a4492;
+}
+
+label {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    background-color: #1a4492;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.botoes button {
+    width: 220px;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    color: #1a4492;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes button:hover {
+    background-color: #dedede;
+}
+
+#detalhes {
+    margin-top: 20px;
+    color: #1a4492;
+}
+
+#detalhes-list {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+#detalhes-list li {
+    padding: 10px;
+    background-color: #1a4492;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#detalhes-list li:hover {
+    background-color: #112e64;
+}
+
+img {
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+#fluxograma-imagem {
+    width: 100%; 
+    max-width: 1000px;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    z-index: 1000;
+    height: 15%;
+}
+
+/* Fundo escurecido para o modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}

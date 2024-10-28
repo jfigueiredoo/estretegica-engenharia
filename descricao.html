@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Plataforma de Descrição de Cargos - FCAP JR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Conteúdo Principal -->
+
+    <div class="main-content">
+        <div class="lateral">
+            <div class="botoes">
+                <div class="botao1">
+                    <button onclick="window.location.href='index.html'">Manual de Processos</button>
+                </div>
+                <div class="botao2">
+                    <button onclick="window.location.href='empresa.html'">Manual da Empresa</button>
+                </div>
+                <div class="botao3">
+                    <button onclick="window.location.href='cliente.html'">Manual de Clientes</button>
+                </div>
+                <div class="botao4">
+                    <button onclick="window.location.href='descricao.html'">Descrição de Cargos</button>
+                </div>
+            </div>           
+        </div>
+        <div class="container">
+            <img src="img/logo2 - cópia.png" alt="Logo da FCAP JR" class="logo">        
+            <h1>Plataforma de Descrição de Cargos</h1>
+            <div>
+                <label for="areas">Área:</label>
+                <select id="areas" onchange="loadCargos()">
+                    <option value="">Selecione uma área:</option>
+                </select>
+            </div>
+            <div>
+                <label for="cargos">Cargo:</label>
+                <select id="cargos" onchange="loadCargoDetalhes()">
+                    <option value="">Selecione um cargo:</option>
+                </select>
+            </div>
+            <div id="detalhes" style="display:none;">
+                <h2>Detalhes do Cargo:</h2>
+                <ul id="detalhes-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script4.js"></script>
+</body>
+</html>

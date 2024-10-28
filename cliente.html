@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Clientes - FCAP JR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilização específica para a seção de informações dos clientes */
+        .info {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            color: #1a4492; /* Mantendo a cor padrão */
+        }
+
+        strong {
+            color: #1a4492;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="lateral">
+            <div class="botoes">
+                <div class="botao1">
+                    <button onclick="window.location.href='index.html'">Manual de Processos</button>
+                </div>
+                <div class="botao2">
+                    <button onclick="window.location.href='empresa.html'">Manual da Empresa</button>
+                </div>
+                <div class="botao3">
+                    <button>Manual de Clientes</button>
+                </div>
+                <div class="botao4">
+                    <button onclick="window.location.href='descricao.html'">Descrição de Cargos</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="img/logo2 - cópia.png" alt="Logo da FCAP JR" class="logo">
+            <h1>Manual de Clientes</h1>
+            
+            <!-- Dropdown para selecionar o cliente -->
+            <div>
+                <label for="clientes">Selecione um cliente:</label>
+                <select id="clientes" onchange="loadClientInfo()">
+                    <option value="">Selecione um cliente:</option>
+                </select>
+            </div>
+
+            <!-- Dropdown para selecionar a categoria de informação -->
+            <div style="margin-top: 20px;">
+                <label for="info-type">Selecione o tipo de informação:</label>
+                <select id="info-type" onchange="showInfo()">
+                    <option value="">Selecione um tipo de informação:</option>
+                    <option value="informacoes">Informações do Cliente</option>
+                    <option value="detalhes">Detalhes Adicionais</option>
+                    <option value="pagamento">Método de Pagamento</option>
+                    <option value="servicos">Serviços Prestados</option>
+                </select>
+            </div>
+
+            <!-- Conteiner para mostrar as informações do cliente -->
+            <div id="info-container" class="info-container" style="display: none;">
+                <div class="info" id="informacoes" style="display: none;">
+                    <h2>Informações do Cliente</h2>
+                    <p><strong>Nome do Cliente:</strong> <span id="cliente-nome"></span></p>
+                    <p><strong>Setor de Atuação:</strong> <span id="cliente-setor"></span></p>
+                    <p><strong>Email:</strong> <span id="cliente-email"></span></p>
+                </div>
+                <div class="info" id="detalhes" style="display: none;">
+                    <h2>Detalhes Adicionais</h2>
+                    <p><strong>Número de Contato:</strong> <span id="cliente-numero"></span></p>
+                </div>
+                <div class="info" id="pagamento" style="display: none;">
+                    <h2>Método de Pagamento</h2>
+                    <p><strong>Forma de Pagamento:</strong> <span id="cliente-pagamento"></span></p>
+                </div>
+                <div class="info" id="servicos" style="display: none;">
+                    <h2>Serviços Prestados</h2>
+                    <p><strong>Tipo de Serviço Prestado:</strong> <span id="cliente-servico"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script3.js"></script>
+</body>
+</html>
