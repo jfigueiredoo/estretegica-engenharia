@@ -154,7 +154,7 @@ img {
     z-index: 999;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .lateral {
         width: 100%;
         padding: 15px;
