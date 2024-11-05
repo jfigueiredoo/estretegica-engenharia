@@ -17,37 +17,6 @@ const data = {
             "A11: Confirmar com a equipe de tesouraria a execução dos pagamentos",
             "A12: Arquivar as confirmações de pagamento",
             "A13: Processo concluído"
-        ],
-                    "Solicitação de Reembolso de Despesas": [
-            "A01: Receber a solicitação de reembolso do colaborador",
-            "A02: Verificar se todos os documentos necessários estão anexados",
-            "A03: Conferir a autenticidade e validade dos recibos",
-            "A04: Validar se a despesa está de acordo com a política da empresa",
-            "Caso SIM: Ir para A08 e seguir leitura",
-            "Caso NÃO: Ir para A05 e seguir a leitura",
-            "A05: Solicitar documentação complementar ao colaborador",
-            "A06: Receber e revisar os documentos adicionais",
-            "A07: Atualizar a solicitação no sistema de reembolso",
-            "A08: Aprovar o reembolso no sistema financeiro",
-            "A09: Enviar a solicitação aprovada para o setor de contas a pagar",
-            "A10: Confirmar a execução do pagamento pelo setor de contas a pagar",
-            "A11: Notificar o colaborador sobre o status do reembolso",
-            "A12: Arquivar a solicitação no registro financeiro",
-            "A13: Reembolso processado"
-        ]
-        },
-        "Analista Financeiro": {
-            "Conciliação Bancária": [
-                "A01: Acessar extrato bancário",
-                "A02: Comparar valores com o sistema financeiro",
-                "A03: Identificar e corrigir divergências",
-                "A04: Finalizar conciliação"
-            ],
-            "Emissão de Notas Fiscais": [
-                "A01: Acessar o sistema de emissão de notas fiscais",
-                "A02: Preencher os dados do cliente",
-                "A03: Gerar a nota fiscal",
-                "A04: Enviar a nota fiscal para o cliente"
             ]
         }
     }
