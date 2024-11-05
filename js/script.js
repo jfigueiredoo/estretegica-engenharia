@@ -229,9 +229,4 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
-// Verifica se o usuário está logado
-if (!localStorage.getItem('isLoggedIn')) {
-    window.location.href = 'index.html';
-}
-
 document.addEventListener('DOMContentLoaded', loadAreas);
