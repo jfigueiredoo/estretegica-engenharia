@@ -1,31 +1,40 @@
 const data = {
     "Setor Financeiro": {
         "Supervisor Financeiro": {
-            "Solicitação de Ativação do Cartão Zona Azul": [
-                "A01: Quando há solicitação",
-                "A02: Pegar o celular",
-                "A03: Abrir o aplicativo do Zona Azul",
-                "A04: O veículo já está no sistema?",
-                "Caso SIM: Ir para A09 e seguir leitura",
-                "Caso NÃO: Ir para A05 e seguir a leitura",
-                "A05: Cadastrar veículo no aplicativo do Zona Azul",
-                "A06: Ir na aba 'placas e usos' na aba de 'veículos' e depois em 'novo' selecionando se é moto ou carro",
-                "A07: Preencher informações adicionando os dados Placa do veículo",
-                "A08: Apertar em 'Cadastrar'",
-                "A09: Selecionar veículo",
-                "A10: Apertar o botão 'ativar cartão'",
-                "A11: Selecionar a duração e a forma de pagamento, escolhendo a opção 'usar meus créditos'",
-                "A12: Confirmar ativação",
-                "A13: Cartão ativado"
-            ],
-            "Processo de Fechamento de Caixa": [
-                "A01: Receber relatórios de vendas do dia",
-                "A02: Conferir os valores com os dados do sistema",
-                "A03: Identificar possíveis divergências",
-                "A04: Gerar relatório final do caixa",
-                "A05: Enviar relatório para o financeiro",
-                "A06: Arquivar comprovantes"
-            ]
+                    "Aprovação de Pagamentos Mensais": [
+            "A01: Quando chega a data de pagamento",
+            "A02: Verificar a lista de pagamentos pendentes",
+            "A03: Acessar o sistema de gestão financeira",
+            "A04: Conferir se todas as faturas estão devidamente autorizadas",
+            "Caso SIM: Ir para A08 e seguir leitura",
+            "Caso NÃO: Ir para A05 e seguir a leitura",
+            "A05: Solicitar autorização de pagamento pendente ao setor responsável",
+            "A06: Receber a autorização pendente",
+            "A07: Atualizar o status da fatura no sistema",
+            "A08: Selecionar as faturas autorizadas para pagamento",
+            "A09: Confirmar os detalhes de pagamento (valores, datas e destinatários)",
+            "A10: Aprovar e enviar os pagamentos para o banco",
+            "A11: Confirmar com a equipe de tesouraria a execução dos pagamentos",
+            "A12: Arquivar as confirmações de pagamento",
+            "A13: Processo concluído"
+        ],
+                    "Solicitação de Reembolso de Despesas": [
+            "A01: Receber a solicitação de reembolso do colaborador",
+            "A02: Verificar se todos os documentos necessários estão anexados",
+            "A03: Conferir a autenticidade e validade dos recibos",
+            "A04: Validar se a despesa está de acordo com a política da empresa",
+            "Caso SIM: Ir para A08 e seguir leitura",
+            "Caso NÃO: Ir para A05 e seguir a leitura",
+            "A05: Solicitar documentação complementar ao colaborador",
+            "A06: Receber e revisar os documentos adicionais",
+            "A07: Atualizar a solicitação no sistema de reembolso",
+            "A08: Aprovar o reembolso no sistema financeiro",
+            "A09: Enviar a solicitação aprovada para o setor de contas a pagar",
+            "A10: Confirmar a execução do pagamento pelo setor de contas a pagar",
+            "A11: Notificar o colaborador sobre o status do reembolso",
+            "A12: Arquivar a solicitação no registro financeiro",
+            "A13: Reembolso processado"
+        ]
         },
         "Analista Financeiro": {
             "Conciliação Bancária": [
@@ -45,7 +54,7 @@ const data = {
 };
 
 const descricaoDetalhada = {
-    "A03: Abrir o aplicativo do Zona Azul": "Fazer o login e clicar no canto inferior central para cadastrar o carro.",
+    "A01: Quando chega a data de pagamento": "Verificar data de chegada do pagamaneto no sistema interno da empresa, selecionando todas as datas e as colocando no drive.",
     "A05: Cadastrar veículo no aplicativo do Zona Azul": "Vá até o menu de veículos e insira as informações necessárias para o cadastro do novo veículo."
     // Adicione mais descrições detalhadas conforme necessário
 };
